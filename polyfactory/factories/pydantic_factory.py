@@ -41,8 +41,9 @@ if TYPE_CHECKING:
 
     from typing_extensions import TypeGuard
 
-
 T = TypeVar("T", bound=BaseModel)
+
+__all__ = ("ModelFactory",)
 
 
 class PydanticFieldMeta(FieldMeta):

@@ -22,6 +22,9 @@ if TYPE_CHECKING:
     from typing_extensions import TypeGuard
 
 
+__all__ = ["OdmanticModelFactory"]
+
+
 class OdmanticModelFactory(Generic[T], ModelFactory[T]):
     """Base factory for odmantic models"""
 

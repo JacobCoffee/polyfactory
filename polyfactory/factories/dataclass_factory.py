@@ -8,6 +8,8 @@ from typing_extensions import TypeGuard, get_type_hints
 from polyfactory.factories.base import BaseFactory, T
 from polyfactory.field_meta import FieldMeta, Null
 
+__all__ = ["DataclassFactory"]
+
 
 class DataclassFactory(Generic[T], BaseFactory[T]):
     """Dataclass base factory"""

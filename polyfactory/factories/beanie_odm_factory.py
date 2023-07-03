@@ -21,6 +21,10 @@ except ImportError as e:
 
 T = TypeVar("T", bound=Document)
 
+__all__ = [
+    "BeanieDocumentFactory",
+]
+
 
 class BeaniePersistenceHandler(Generic[T], AsyncPersistenceProtocol[T]):
     """Persistence Handler using beanie logic"""

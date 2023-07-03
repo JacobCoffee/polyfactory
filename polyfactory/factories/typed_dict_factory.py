@@ -9,6 +9,8 @@ from polyfactory.field_meta import FieldMeta, Null
 
 TypedDictT = TypeVar("TypedDictT", bound=_TypedDictMeta)
 
+__all__ = ["TypedDictFactory"]
+
 
 class TypedDictFactory(Generic[TypedDictT], BaseFactory[TypedDictT]):
     """TypedDict base factory"""

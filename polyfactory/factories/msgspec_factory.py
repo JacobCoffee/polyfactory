@@ -27,6 +27,8 @@ except ImportError as e:
 
 T = TypeVar("T", bound=msgspec.Struct)
 
+__all__ = ["MsgspecFactory"]
+
 
 class MsgspecFactory(Generic[T], BaseFactory[T]):
     """Base factory for msgspec Structs."""
